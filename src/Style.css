@@ -1,0 +1,159 @@
+h1 {
+    color:rgba(20, 20, 20, 0.836);
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+        display: flex;
+        justify-content:center;
+        margin: 0;
+        padding: 0;
+        font-family:"Quicksand";
+        background-color:rgb(227, 227, 232);
+        color: #111111;
+}
+
+App {
+    width: 720px;
+    margin: auto;
+    padding: 24px;
+}
+
+header {
+    margin: 19px;
+}
+
+header h1 {
+    margin: 10px;
+    font-size: 40px;
+}
+
+header p {
+    margin: 0;
+    color: #555;
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 18px 0;
+    gap: 8px;
+
+}
+
+#inp {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+#inp input {
+    width: 500px;
+    flex: 1;
+    border: 1px;
+    outline: 1px;
+    background: transparent;
+    font-size: 14px;
+    font-family:"Quicksand" ;
+
+
+}
+#inp button {
+    border: 0;
+  background: #111111;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Quicksand";
+}
+
+#btns {
+    display: flex;
+    gap: 8px;
+}
+
+#btns select {
+    color: #111111;
+    padding: 8px 10px;
+    border: 0 ;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-family: "Quicksand";
+    
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border: 1 solid #eeeeee;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.task-list button {
+    background: none;
+    border: 0;
+    color: #047857;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.progress-tracker {
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.Progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    background:#eeeeee;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    transition: widht 0.3s ease;
+    background: #13a64a;
+}
+
+.clear-btn {
+    margin-top: 16px;
+    background:rgb(28, 177, 28);
+    color: #f0f0f0;
+    border: 0;
+    border-radius: 4px;
+    padding: 14px 14px;
+    cursor: pointer;
+    font-family: "Quicksand";
+    
+}
