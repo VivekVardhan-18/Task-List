@@ -109,8 +109,8 @@ header p {
 }
 
 .task-list li.completed {
-    text-decoration: line-through;
-    opacity: 0.7;
+  text-decoration: line-through;
+  opacity: 0.7;
 }
 
 .task-list button {

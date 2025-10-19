@@ -2,8 +2,8 @@ import { useState } from "react"
 
 export default function Taskform({addTask}) {
     const[task, setTask] = useState('');
-    const [priority, setPriority] = useState('medium');
-    const [category, setCategory] = useState('general');
+    const [priority, setPriority] = useState('Medium');
+    const [category, setCategory] = useState('General');
 
     const handlesubmit = (e) => {
         e.preventDefault(); //refresh
@@ -11,8 +11,8 @@ export default function Taskform({addTask}) {
 
         //reset
         setTask('');
-        setPriority('medium');
-        setCategory('general');
+        setPriority('Medium');
+        setCategory('General');
     }
     return(
         <form onSubmit={handlesubmit} className="task-form">
