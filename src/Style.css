@@ -8,7 +8,7 @@ h1 {
 
 html, body {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         width: 100%;
         min-height: 100vh;
         margin: 0;
@@ -50,6 +50,8 @@ header p {
 
 #inp {
     display: flex;
+    width: 500px;
+    justify-content: center;
     gap: 8px;
     flex: 1;
     padding: 8px 10px;
@@ -59,7 +61,7 @@ header p {
 }
 
 #inp input {
-    width: 500px;
+    width: 100%;
     max-width: 600px;
     flex: 1;
     border: 1px;
@@ -114,7 +116,7 @@ header p {
 
 .task-list li.completed {
   text-decoration: line-through;
-  opacity: 0.7;
+  opacity: 1.0;
 }
 
 .task-list button {
@@ -160,5 +162,14 @@ header p {
     cursor: pointer;
     font-family: "Quicksand";
     
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    width: 100%;
+  }
+ #inp {
+    width: auto;
+}
 }
 
